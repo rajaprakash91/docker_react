@@ -1,0 +1,17 @@
+version: '3'
+services:
+    web:
+        image: mrpjade/6fe
+        #build: .
+        #dockerfile: Dockerfile.dev
+        ports:
+            - "3000:3000"
+        volumes:
+            - /app/node_modules
+            - C:\raja_ds\6_fe:/app 
+    test:
+        image: mrpjade/6fe
+        volumes:
+            - /app/node_modules
+            - C:\raja_ds\6_fe:/app
+        command: ["npm", "run", "test"]
