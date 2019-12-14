@@ -3,7 +3,7 @@ services:
     - docker
     
 before_install:
-    - docker build -t mrpjade/6fe -f Dockerfile.dev .
+    - docker build -t mrpjade/6fe -f Dockerfile.prod .
 
 script:
     - docker run -e CI=true mrpjade/6fe npm run test
