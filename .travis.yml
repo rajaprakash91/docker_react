@@ -12,7 +12,7 @@ script:
 #http://dockerreact-env.vj4mjk683g.us-east-2.elasticbeanstalk.com/
 deploy:
     #edge: true
-    provider:elasticbeanstalk
+    provider: elasticbeanstalk
     region: "us-east-2"
     app: "docker-react"
     env: "DockerReact-env"
